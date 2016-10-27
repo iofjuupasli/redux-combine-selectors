@@ -1,0 +1,47 @@
+{
+  "name": "redux-combine-selectors",
+  "version": "1.0.0",
+  "description": "",
+  "main": "redux-combine-selectors.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "babel redux-combine-selectors.es6 -o redux-combine-selectors.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iofjuupasli/redux-combine-selectors.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/iofjuupasli/redux-combine-selectors/issues"
+  },
+  "homepage": "https://github.com/iofjuupasli/redux-combine-selectors#readme",
+  "babel": {
+    "presets": [
+      "stage-0",
+      "latest"
+    ],
+    "plugins": [
+      "transform-class-properties",
+      "transform-es2015-modules-umd"
+    ]
+  },
+  "eslintConfig": {
+    "extends": "airbnb-base",
+    "rules": {
+      "no-console": 2
+    },
+    "parser": "babel-eslint"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-eslint": "^7.0.0",
+    "babel-plugin-transform-es2015-modules-umd": "^6.12.0",
+    "babel-preset-latest": "^6.16.0",
+    "babel-preset-stage-0": "^6.16.0",
+    "eslint": "^3.8.0",
+    "eslint-config-airbnb-base": "^9.0.0",
+    "eslint-plugin-import": "^2.0.1"
+  }
+}
